@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>严选登录页面</title>
+	<link rel="stylesheet" href="./day06/css/common.css">
+	 <link rel="stylesheet" href="./iconfont/iconfont.css">
+	<style>
+		.denglu{
+			height:450px;
+			width:430px;
+			background-color:white;
+            opacity:initial; 
+			left:50%;
+			margin-left:-195px;
+			position:relative;
+			box-sizing: border-box;
+			top:150px;
+			padding: 20px 0px;
+		}
+		.deng-one{
+			height:3.5em;
+			width:80%;
+			margin:0 auto;
+			border:1px solid #ccc;
+			box-sizing:border-box;
+			padding:.3px;
+			line-height: 3.5em;
+			position: relative;
+
+		}
+		.deng-one>li:first-child{
+			float:left;
+			width:40px;
+			text-align:center;
+			line-height: 3.5em;
+			/*border-right:1px solid #ccc;*/
+		}
+		.deng-one>li:last-child{
+			width:100%;
+			/*border:1px solid red;*/
+			height:4em;
+
+		}
+         .deng-one>li:last-child >input:focus + .close{
+         	display:block;
+         }
+         .close{
+         	position: absolute;
+			line-height: 4em;
+			top: 0; right: .5em;
+			display: none;
+			color:red;
+         }
+		.deng-one>li:last-child>input{
+			height: 2.5em;
+			width:80%;
+			border:none;
+			border-left:1px solid #ccc;
+			padding:0 .3em;
+
+		}
+		.xuanze>ul>li{
+              float:left;
+              width:50%;
+              box-sizing: border-box;
+              /*border:1px solid #ccc;*/
+              /*height:3em;*/
+              margin:0 auto;
+              text-align: center;
+              margin-bottom:40px;
+              font-size: 1.3em;
+              color:#333;
+
+		}
+		.xuanze>ul>li>a:hover{
+			color:#cfb799;
+		}
+		.xuanze::after{
+			content:"";
+			display: block;
+			clear:both;
+		}
+
+        .piao{
+            color:#a8a8a8;
+        	position:absolute;
+        	right:10px;
+        	top:5px;
+        }
+        .piao>a:hover{
+        	color:#ccc;
+        }
+        .piao-2{
+        	font-size: .8em;
+        	margin-left: 270px;
+        	color:#ccc;
+        }
+        .piao-2>a:hover{
+			color:#cfb799;
+
+        }
+        .deng-two{
+			height:3.5em;
+			width:80%;
+			margin:0 auto;
+			border:1px solid #ccc;
+			box-sizing:border-box;
+			padding:.3px;
+			line-height: 3.5em;
+		}
+		.deng-two>li{
+			/*float:left;*/
+		}
+		.deng-two::after{
+			content:"";
+			display:none;
+			clear:both;
+		}
+		.deng-two>li:first-child>input{
+			height: 2.5em;
+			width:100%;
+			border:none;
+			/*border-left:1px solid #ccc;*/
+			padding:0 .3em;
+			box-sizing: border-box;
+
+		}
+		.deng-two>li:first-child{
+			float:left;
+			/*border:1px solid red;*/
+			width:70%;
+
+		}
+		.deng-two>li:last-child{
+			height:100%;
+			width:30%;
+			float:right;
+			/*border:1px solid red;*/
+			background-color: #ccc;
+			text-align: center;
+			font-size: .9em;
+		}
+		.deng-two>li:hover>a{
+			color:#cfb799;
+             
+		}
+		.deng-three{
+			/*height:3.5em;*/
+			width:80%;
+			margin:0 auto;
+			border:1px solid #ccc;
+			box-sizing:border-box;
+			padding:.3px;
+			line-height: 2em;
+			text-align: center;
+			font-size: 1.5em;
+			background-color:#cfb799; 
+		}
+		body{
+			height: 750px;
+			background-color:black;
+			/*opacity: 0.8;*/
+		}
+		.dibu{
+			height:4em;
+			width:100%;
+			background-color:#f5f3ef;
+			margin-top:4em;
+			box-sizing: border-box;
+			padding:0 40px;
+		}
+		.dibu>a>span{
+			font-size: 2em;
+			color:#999;
+			line-height:2em;
+		}
+		.dibu>a>span:hover{
+			color:#cfb799;
+		}
+
+	</style>
+</head>
+<body>
+<!-- <div class="box"> -->
+	<div class="denglu">
+	<div class="piao" >
+		<a href="file:///D:/briup/3-html/wangyiyanxuan.html"><span class="iconfont icon-guanbi" style="font-size:1.5em"></span></a>
+	</div>
+	<div class="xuanze">
+		<ul>
+			<li><a href="#">手机号登录</a></li>
+			<li><a href="#">邮箱登录</a></li>
+		</ul>
+	</div>
+	<div class="piao-2"><a href="#">使用密码验证登录</a></div>
+	<ul>
+		<li>
+			<ul class="deng-one">
+				<li>
+					<span class="iconfont icon-shouji"  style="font-size:1.5em" ></span>
+				</li>
+				<li>
+					<input type="text" placeholder="请输入手机号">
+					<div class="close">
+						<span class="iconfont icon-guanbi"></span>
+					</div>
+				</li>
+			</ul>
+		</li>
+		<li style="height:40px;width:2px"></li>
+
+		<li>
+			<ul class="deng-two">
+				<li>
+					<input type="text" placeholder="请输入短信验证码">
+				</li>
+				<li><a href="#">获取验证码</a></li>
+			</ul>
+		</li>
+		<li style="height:60px;width:2px"></li>
+
+		<li>
+			<div class="deng-three">
+				<a href="#">登&nbsp;&nbsp;录</a>
+			</div>
+		</li>
+	</ul>
+	<div class="dibu">
+		<a href="#"><span class="iconfont icon-weixin">&nbsp;</span></a>
+		<a href="#"><span class="iconfont icon-QQ">&nbsp;</span></a>
+		<a href="#"><span class="iconfont icon-xinlangweibo">&nbsp;</span></a>
+		<a href="#"><span class="iconfont icon-wangyi">&nbsp;</span></a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#"><span style="font-size:.8em">手机快捷键注册</span></a>
+		&nbsp;
+		<a href="#"><span style="font-size:.8em">遇到问题？</span></a>
+	</div>
+		
+	</div>
+	<!-- </div> -->
+</body>
+</html>
